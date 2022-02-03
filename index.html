@@ -11,17 +11,22 @@
       href="https : //fonts.googleapis.com/css2 ? _ _ _ _ _ famille= Poppins:wght@300;400;500 &_ _ _ _ _ _ _ _ 200 & display=swap"
       rel="feuille de style"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>fiche jeux</title>
   </head>
   <body>
     <main>
+      <!--__________block principal____________ -->
       <section class="glass">
+        <!--__________block gauche ____________ -->
         <div class="tableau-board">
+          <!--__________block utilisateur____________ -->
           <div class="utilisateur">
             <img src="./img/jojo.png" alt="image de johan" />
             <h2>johan</h2>
-            <p>un membre élite</p>
+            <p>membre élite</p>
           </div>
+          <!--__________block liens____________ -->
           <div class="liens">
             <div class="lien">
               <img src="./img/tuich.png" alt="" />
@@ -32,56 +37,63 @@
               <h2>jeux</h2>
             </div>
           </div>
+          <!--__________block joigner nous____________ -->
           <div class="pro-join">
             <img src="" alt="" />
             <p>joignez nous gratuitement</p>
           </div>
         </div>
+        <!--__________block gauche____________ -->
         <div class="jeux">
           <div class="status">
             <h1>Jeux Actifs</h1>
             <input type="text" />
           </div>
-
+          <!--__________block cards____________ -->
           <div class="cards">
-            <div class="card">
+            <!--__________block card____________ -->
+            <div class="card" data-aos="flip-right">
               <img src="./img/ass.png " alt="assasin creed" />
               <div class="infos">
                 <h2>assassin creed découverte</h2>
                 <p>PS5 version</p>
                 <div class="progress"></div>
               </div>
-              <div class="pourcentage">60%</div>
+              <div class="pourcentage">70%</div>
             </div>
-          </div>
 
-          <div class="cards">
-            <div class="card">
-              <img src="./img/ass.png " alt="assasin creed" />
-              <div class="infos">
-                <h2>assassin creed l'attaque de warterblack</h2>
-                <p>PS5 version</p>
-                <div class="progress"></div>
+            <div class="cards">
+              <div class="card" data-aos="flip-right">
+                <img src="./img/ass.png " alt="assasin creed" />
+                <div class="infos">
+                  <h2>assassin creed l'attaque de warterblack</h2>
+                  <p>PS5 version</p>
+                  <div class="progress"></div>
+                </div>
+                <div class="pourcentage">60%</div>
               </div>
-              <div class="pourcentage">60%</div>
             </div>
-          </div>
 
-          <div class="cards">
-            <div class="card">
-              <img src="./img/ass.png " alt="assasin creed" />
-              <div class="infos">
-                <h2>assassin creed en route pour madav</h2>
-                <p>PS5 version</p>
-                <div class="progress"></div>
+            <div class="cards">
+              <div class="card" data-aos="flip-right">
+                <img src="./img/ass.png " alt="assasin creed" />
+                <div class="infos">
+                  <h2>assassin creed en route pour madav</h2>
+                  <p>PS5 version</p>
+                  <div class="progress"></div>
+                </div>
+                <div class="pourcentage">60%</div>
               </div>
-              <div class="pourcentage">60%</div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <div class="circle1"></div>
-    <div class="circle2"></div>
+    <div class="circle1" data-aos="zoom-in" data-aos-duration="1000"></div>
+    <div class="circle2" data-aos="zoom-in" data-aos-duration="1000"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
