@@ -10,8 +10,22 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "poppins", sans-serif;
 }
-
+h1 {
+  color: #426696;
+  font-size: 2rem;
+  font-weight: 500;
+}
+h2 {
+  color: #658ec6;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+p {
+  font-size: 1rem;
+  font-weight: 300;
+}
 .glass {
   min-height: 80vh;
   width: 60%;
@@ -25,6 +39,10 @@ main {
   border-radius: 2rem;
   backdrop-filter: blur(2rem);
   display: flex;
+}
+.utilisateur img {
+  width: 150px;
+  border-radius: 20%;
 }
 .circle1,
 .circle2 {
@@ -53,14 +71,30 @@ main {
   flex-direction: column;
   text-align: center;
   padding: 1.5rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+.liens {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
 }
 
 .lien {
   display: flex;
+  align-items: center;
+  margin: 0.8rem;
 }
+
 .lien img {
   width: 50px;
   height: 50px;
+  margin-right: 5px;
 }
 
 .pro-join {
@@ -69,8 +103,42 @@ main {
   font-size: 1.2rem;
   padding: 1rem;
   border-radius: 2.5rem;
+  margin-top: 9rem;
 }
 
+.pro-join p {
+  width: 100%;
+}
 .jeux {
   flex: 2;
+  padding: 1rem;
+}
+.status {
+  margin: 1rem 0;
+}
+.status input {
+  border: none;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+.infos {
+  margin: 0.1rem;
+  display: flex;
+  flex-direction: column;
 }
